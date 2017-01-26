@@ -1,0 +1,14 @@
+defaults: &defaults
+    twitter:
+        clientId: ENV["CONSUMER_KEY"]
+        clientSecret: ENV["CONSUMER_SECRET"]
+
+development:
+    <<: *defaults
+    
+test:
+    <<: *defaults
+    
+production:
+    <<: *defaults
+    
